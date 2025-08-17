@@ -15,7 +15,6 @@ struct Meet_the_Composable_ArchitectureApp: App {
         CounterFeature()
             ._printChanges()
     }
-    
     var body: some Scene {
         WindowGroup {
             CounterView(store: Self.store)
