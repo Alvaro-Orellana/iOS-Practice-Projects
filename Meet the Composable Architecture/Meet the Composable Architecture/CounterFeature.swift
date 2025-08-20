@@ -12,7 +12,7 @@ import SwiftUI
 struct CounterFeature {
     
     @ObservableState
-    struct State {
+    struct State: Equatable {
         var count = 0
         var isLoading = false
         var fact: String?

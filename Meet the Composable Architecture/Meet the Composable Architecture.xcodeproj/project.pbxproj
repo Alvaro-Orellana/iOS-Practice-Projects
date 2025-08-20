@@ -10,14 +10,30 @@
 		AAB42E242E3E8DE800A4B49C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AAB42E232E3E8DE800A4B49C /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AAFF02912E56324800A6F04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAB42E092E3E7A6200A4B49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB42E102E3E7A6200A4B49C;
+			remoteInfo = "Meet the Composable Architecture";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AAB42E112E3E7A6200A4B49C /* Meet the Composable Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meet the Composable Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFF028D2E56324700A6F04A /* Meet the Composable ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meet the Composable ArchitectureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AAB42E132E3E7A6200A4B49C /* Meet the Composable Architecture */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Meet the Composable Architecture";
+			sourceTree = "<group>";
+		};
+		AAFF028E2E56324800A6F04A /* Meet the Composable ArchitectureTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Meet the Composable ArchitectureTests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +47,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAFF028A2E56324700A6F04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				AAB42E132E3E7A6200A4B49C /* Meet the Composable Architecture */,
+				AAFF028E2E56324800A6F04A /* Meet the Composable ArchitectureTests */,
 				AAB42E122E3E7A6200A4B49C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				AAB42E112E3E7A6200A4B49C /* Meet the Composable Architecture.app */,
+				AAFF028D2E56324700A6F04A /* Meet the Composable ArchitectureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +101,29 @@
 			productReference = AAB42E112E3E7A6200A4B49C /* Meet the Composable Architecture.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AAFF028C2E56324700A6F04A /* Meet the Composable ArchitectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFF02932E56324800A6F04A /* Build configuration list for PBXNativeTarget "Meet the Composable ArchitectureTests" */;
+			buildPhases = (
+				AAFF02892E56324700A6F04A /* Sources */,
+				AAFF028A2E56324700A6F04A /* Frameworks */,
+				AAFF028B2E56324700A6F04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFF02922E56324800A6F04A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AAFF028E2E56324800A6F04A /* Meet the Composable ArchitectureTests */,
+			);
+			name = "Meet the Composable ArchitectureTests";
+			packageProductDependencies = (
+			);
+			productName = "Meet the Composable ArchitectureTests";
+			productReference = AAFF028D2E56324700A6F04A /* Meet the Composable ArchitectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -88,6 +136,10 @@
 				TargetAttributes = {
 					AAB42E102E3E7A6200A4B49C = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					AAFF028C2E56324700A6F04A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = AAB42E102E3E7A6200A4B49C;
 					};
 				};
 			};
@@ -109,12 +161,20 @@
 			projectRoot = "";
 			targets = (
 				AAB42E102E3E7A6200A4B49C /* Meet the Composable Architecture */,
+				AAFF028C2E56324700A6F04A /* Meet the Composable ArchitectureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AAB42E0F2E3E7A6200A4B49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFF028B2E56324700A6F04A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAFF02892E56324700A6F04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAFF02922E56324800A6F04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAB42E102E3E7A6200A4B49C /* Meet the Composable Architecture */;
+			targetProxy = AAFF02912E56324800A6F04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AAB42E1A2E3E7A6400A4B49C /* Debug */ = {
@@ -317,6 +392,42 @@
 			};
 			name = Release;
 		};
+		AAFF02942E56324800A6F04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YAAW455QSP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvaro.orellana.Meet-the-Composable-ArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meet the Composable Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meet the Composable Architecture";
+			};
+			name = Debug;
+		};
+		AAFF02952E56324800A6F04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YAAW455QSP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvaro.orellana.Meet-the-Composable-ArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meet the Composable Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meet the Composable Architecture";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +445,15 @@
 			buildConfigurations = (
 				AAB42E1D2E3E7A6400A4B49C /* Debug */,
 				AAB42E1E2E3E7A6400A4B49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFF02932E56324800A6F04A /* Build configuration list for PBXNativeTarget "Meet the Composable ArchitectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFF02942E56324800A6F04A /* Debug */,
+				AAFF02952E56324800A6F04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
